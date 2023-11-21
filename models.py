@@ -19,4 +19,8 @@ class Author(Base):
     first_name = Column(String, nullable=False)
     name = Column(String, nullable=False)
 
+class Comment(Base):
+    __tablename__ = "comments"
 
+    id = Column(Integer, primary_key=True, nullable=False)
+    text = Column(String, nullable=False)

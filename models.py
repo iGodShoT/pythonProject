@@ -10,6 +10,7 @@ class Post(Base):
     content = Column(String, nullable=False)
     published = Column(Boolean, nullable=True, server_default='TRUE')
     rating = Column(Integer, nullable=True)
+    # Класс статьи
 
 class Author(Base):
     __tablename__ = "authors"

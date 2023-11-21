@@ -13,6 +13,9 @@ class PostCreate(PostBase):
 class UpdatePost(PostBase):
     published: bool
 
+class DeletePost(PostBase):
+    pass
+
 class Post(BaseModel):
     title: str
     content: str
